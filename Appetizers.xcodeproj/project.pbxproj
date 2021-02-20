@@ -18,6 +18,7 @@
 		EF02CED025E1511800288C09 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CECF25E1511800288C09 /* OrderView.swift */; };
 		EF02CED725E1518700288C09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CED625E1518700288C09 /* Constants.swift */; };
 		EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEDD25E156C000288C09 /* Appetizer.swift */; };
+		EF02CEE825E15A8100288C09 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EF02CECF25E1511800288C09 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		EF02CED625E1518700288C09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF02CEDD25E156C000288C09 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		EF02CEC425E1510300288C09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF02CEE625E15A7700288C09 /* List Cells */,
 				EF02CEC525E1510A00288C09 /* AppetizerListView.swift */,
 				EF02CECB25E1511400288C09 /* AccountView.swift */,
 				EF02CECF25E1511800288C09 /* OrderView.swift */,
@@ -151,6 +154,14 @@
 			children = (
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		EF02CEE625E15A7700288C09 /* List Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */,
+			);
+			path = "List Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 			files = (
 				EF02CECC25E1511400288C09 /* AccountView.swift in Sources */,
 				EF02CEB425E1504300288C09 /* AppetizerTabView.swift in Sources */,
+				EF02CEE825E15A8100288C09 /* AppetizerListCell.swift in Sources */,
 				EF02CEB225E1504300288C09 /* AppetizersApp.swift in Sources */,
 				EF02CEC625E1510A00288C09 /* AppetizerListView.swift in Sources */,
 				EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */,
