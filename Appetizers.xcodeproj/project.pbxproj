@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		EF02CEB225E1504300288C09 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CE9F25E1504200288C09 /* AppetizersApp.swift */; };
 		EF02CEB325E1504300288C09 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CE9F25E1504200288C09 /* AppetizersApp.swift */; };
-		EF02CEB425E1504300288C09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEA025E1504200288C09 /* ContentView.swift */; };
-		EF02CEB525E1504300288C09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEA025E1504200288C09 /* ContentView.swift */; };
+		EF02CEB425E1504300288C09 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEA025E1504200288C09 /* AppetizerTabView.swift */; };
+		EF02CEB525E1504300288C09 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEA025E1504200288C09 /* AppetizerTabView.swift */; };
 		EF02CEB625E1504300288C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF02CEA125E1504300288C09 /* Assets.xcassets */; };
 		EF02CEB725E1504300288C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF02CEA125E1504300288C09 /* Assets.xcassets */; };
+		EF02CEC625E1510A00288C09 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEC525E1510A00288C09 /* AppetizerListView.swift */; };
+		EF02CECC25E1511400288C09 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CECB25E1511400288C09 /* AccountView.swift */; };
+		EF02CED025E1511800288C09 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CECF25E1511800288C09 /* OrderView.swift */; };
+		EF02CED725E1518700288C09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CED625E1518700288C09 /* Constants.swift */; };
+		EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEDD25E156C000288C09 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF02CE9F25E1504200288C09 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
-		EF02CEA025E1504200288C09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF02CEA025E1504200288C09 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		EF02CEA125E1504300288C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF02CEA625E1504300288C09 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF02CEA925E1504300288C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF02CEAE25E1504300288C09 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF02CEB025E1504300288C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF02CEB125E1504300288C09 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		EF02CEC525E1510A00288C09 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		EF02CECB25E1511400288C09 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		EF02CECF25E1511800288C09 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		EF02CED625E1518700288C09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF02CEDD25E156C000288C09 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,12 @@
 		EF02CE9E25E1504200288C09 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EF02CEE325E1575F00288C09 /* Manager */,
+				EF02CEDC25E156BB00288C09 /* Model */,
+				EF02CED325E1517000288C09 /* UIHelper */,
+				EF02CEC425E1510300288C09 /* Views */,
 				EF02CE9F25E1504200288C09 /* AppetizersApp.swift */,
-				EF02CEA025E1504200288C09 /* ContentView.swift */,
+				EF02CEA025E1504200288C09 /* AppetizerTabView.swift */,
 				EF02CEA125E1504300288C09 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -88,6 +102,55 @@
 				EF02CEB125E1504300288C09 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		EF02CEC425E1510300288C09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CEC525E1510A00288C09 /* AppetizerListView.swift */,
+				EF02CECB25E1511400288C09 /* AccountView.swift */,
+				EF02CECF25E1511800288C09 /* OrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF02CED325E1517000288C09 /* UIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CED525E1517F00288C09 /* Rest */,
+				EF02CED425E1517400288C09 /* Extension */,
+			);
+			path = UIHelper;
+			sourceTree = "<group>";
+		};
+		EF02CED425E1517400288C09 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF02CED525E1517F00288C09 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CED625E1518700288C09 /* Constants.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		EF02CEDC25E156BB00288C09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CEDD25E156C000288C09 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF02CEE325E1575F00288C09 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF02CEB425E1504300288C09 /* ContentView.swift in Sources */,
+				EF02CECC25E1511400288C09 /* AccountView.swift in Sources */,
+				EF02CEB425E1504300288C09 /* AppetizerTabView.swift in Sources */,
 				EF02CEB225E1504300288C09 /* AppetizersApp.swift in Sources */,
+				EF02CEC625E1510A00288C09 /* AppetizerListView.swift in Sources */,
+				EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */,
+				EF02CED025E1511800288C09 /* OrderView.swift in Sources */,
+				EF02CED725E1518700288C09 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF02CEB525E1504300288C09 /* ContentView.swift in Sources */,
+				EF02CEB525E1504300288C09 /* AppetizerTabView.swift in Sources */,
 				EF02CEB325E1504300288C09 /* AppetizersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
