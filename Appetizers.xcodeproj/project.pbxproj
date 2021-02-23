@@ -19,6 +19,8 @@
 		EF02CED725E1518700288C09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CED625E1518700288C09 /* Constants.swift */; };
 		EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEDD25E156C000288C09 /* Appetizer.swift */; };
 		EF02CEE825E15A8100288C09 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */; };
+		EF33437125E531C300658FD4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437025E531C300658FD4 /* NetworkManager.swift */; };
+		EF33437525E5324F00658FD4 /* APErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437425E5324F00658FD4 /* APErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EF02CED625E1518700288C09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF02CEDD25E156C000288C09 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		EF33437025E531C300658FD4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EF33437425E5324F00658FD4 /* APErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				EF02CED625E1518700288C09 /* Constants.swift */,
+				EF33437425E5324F00658FD4 /* APErrors.swift */,
 			);
 			path = Rest;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 		EF02CEE325E1575F00288C09 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				EF33437025E531C300658FD4 /* NetworkManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF33437125E531C300658FD4 /* NetworkManager.swift in Sources */,
+				EF33437525E5324F00658FD4 /* APErrors.swift in Sources */,
 				EF02CECC25E1511400288C09 /* AccountView.swift in Sources */,
 				EF02CEB425E1504300288C09 /* AppetizerTabView.swift in Sources */,
 				EF02CEE825E15A8100288C09 /* AppetizerListCell.swift in Sources */,

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AppetizerListCell: View {
-    var appetizerName: String
-    var appetizerPrice: Double
+    let appetizerName: String
+    let appetizerPrice: Double
     var body: some View {
         HStack {
             Image("asian-flank-steak")
