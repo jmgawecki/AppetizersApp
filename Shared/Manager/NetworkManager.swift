@@ -38,13 +38,17 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let appetizers = try decoder.decode([Appetizer].self, from: data)
+                let appetizers = try decoder.decode(AppetizerResponse.self, from: data)
                 
-                completed(.success(appetizers))
+                completed(.success(appetizers.request))
             } catch {
                 completed(.failure(.invalidData))
             }
         }
         dataTask.resume()
     }
+    
+//    func downloadImage(with imageUrlStr: String, completed: @escaping(Result<UIImage>) -> Void) {
+//
+//    }
 }

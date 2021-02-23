@@ -21,6 +21,7 @@
 		EF02CEE825E15A8100288C09 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */; };
 		EF33437125E531C300658FD4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437025E531C300658FD4 /* NetworkManager.swift */; };
 		EF33437525E5324F00658FD4 /* APErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437425E5324F00658FD4 /* APErrors.swift */; };
+		EF33437A25E5387900658FD4 /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437925E5387900658FD4 /* AppetizerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		EF33437025E531C300658FD4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EF33437425E5324F00658FD4 /* APErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APErrors.swift; sourceTree = "<group>"; };
+		EF33437925E5387900658FD4 /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		EF02CE9E25E1504200288C09 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EF33437825E5386900658FD4 /* View Model */,
 				EF02CEE325E1575F00288C09 /* Manager */,
 				EF02CEDC25E156BB00288C09 /* Model */,
 				EF02CED325E1517000288C09 /* UIHelper */,
@@ -168,6 +171,14 @@
 				EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */,
 			);
 			path = "List Cells";
+			sourceTree = "<group>";
+		};
+		EF33437825E5386900658FD4 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF33437925E5387900658FD4 /* AppetizerViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 				EF02CEC625E1510A00288C09 /* AppetizerListView.swift in Sources */,
 				EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */,
 				EF02CED025E1511800288C09 /* OrderView.swift in Sources */,
+				EF33437A25E5387900658FD4 /* AppetizerViewModel.swift in Sources */,
 				EF02CED725E1518700288C09 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

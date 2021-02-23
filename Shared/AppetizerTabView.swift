@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct AppetizerTabView: View {
+    @StateObject var viewModel = AppetizerViewModel()
+    
     var body: some View {
         TabView {
-            AppetizerListView()
+            AppetizerListView(appetizersArray: $viewModel.appetizers)
                 .tabItem {
                     Image(systemName: SFSymbolsAsString.homePage)
                     Text("Home")
                 }
+                .onAppear(perform: {
+                    viewModel.getAppetizers()
+                })
             AccountView()
                 .tabItem {
                     Image(systemName: SFSymbolsAsString.account)

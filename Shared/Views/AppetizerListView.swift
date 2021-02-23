@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    @Binding var appetizersArray: [Appetizer]
     var body: some View {
         NavigationView {
-            List(MockData.Appetizers) { appetizer in
+            List(appetizersArray) { appetizer in
                 AppetizerListCell(appetizerName: appetizer.name,
                                   appetizerPrice: appetizer.price)
             }
@@ -22,6 +23,6 @@ struct AppetizerListView: View {
 
 struct AppetizerListView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerListView()
+        AppetizerListView(appetizersArray: .constant(MockData.Appetizers))
     }
 }
