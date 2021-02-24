@@ -5,11 +5,12 @@
 //  Created by Jakub Gawecki on 23/02/2021.
 //
 
-import Foundation
+import UIKit
 
 final class NetworkManager {
     
     static let shared = NetworkManager()
+    private let cache = NSCache<NSString, UIImage>()
     
     private init() {}
     
@@ -48,7 +49,32 @@ final class NetworkManager {
         dataTask.resume()
     }
     
-//    func downloadImage(with imageUrlStr: String, completed: @escaping(Result<UIImage>) -> Void) {
-//
-//    }
+    func downloadImage(with imageUrlStr: String, completed: @escaping (UIImage?) -> Void) {
+        let cacheKey = NSString(string: imageUrlStr)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: imageUrlStr) else {
+            completed(nil)
+            return
+        }
+        
+        let dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data, let image = UIImage(data: data) else {
+                completed(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            
+            completed(image)
+        }
+ 
+        
+        dataTask.resume()
+    }
 }

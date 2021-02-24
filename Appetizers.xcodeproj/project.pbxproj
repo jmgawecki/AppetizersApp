@@ -24,6 +24,8 @@
 		EF33437A25E5387900658FD4 /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437925E5387900658FD4 /* AppetizerViewModel.swift */; };
 		EF33438025E53DF700658FD4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437F25E53DF700658FD4 /* Alert.swift */; };
 		EF58CE9425E68CAC00C094D1 /* AppetizerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58CE9325E68CAC00C094D1 /* AppetizerProgressView.swift */; };
+		EFB9928B25E6D78400F8AC3B /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB9928A25E6D78400F8AC3B /* RemoteImage.swift */; };
+		EFB9928C25E6D78400F8AC3B /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB9928A25E6D78400F8AC3B /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		EF33437925E5387900658FD4 /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
 		EF33437F25E53DF700658FD4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		EF58CE9325E68CAC00C094D1 /* AppetizerProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerProgressView.swift; sourceTree = "<group>"; };
+		EFB9928A25E6D78400F8AC3B /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +82,11 @@
 		EF02CE9E25E1504200288C09 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EFB9928025E6D6E800F8AC3B /* Component */,
+				EF4D836325E6DCC400B7008B /* Utilities */,
 				EF33437825E5386900658FD4 /* View Model */,
-				EF02CEE325E1575F00288C09 /* Manager */,
-				EF02CEDC25E156BB00288C09 /* Model */,
-				EF02CED325E1517000288C09 /* UIHelper */,
-				EF58CE9125E68C9300C094D1 /* Custom Views */,
 				EF02CEC425E1510300288C09 /* Views */,
-				EF02CE9F25E1504200288C09 /* AppetizersApp.swift */,
-				EF02CEA025E1504200288C09 /* AppetizerTabView.swift */,
-				EF02CEA125E1504300288C09 /* Assets.xcassets */,
+				EFB9928125E6D6EF00F8AC3B /* Screens */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -121,10 +120,9 @@
 		EF02CEC425E1510300288C09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EF02CEE625E15A7700288C09 /* List Cells */,
-				EF02CEC525E1510A00288C09 /* AppetizerListView.swift */,
-				EF02CECB25E1511400288C09 /* AccountView.swift */,
-				EF02CECF25E1511800288C09 /* OrderView.swift */,
+				EF02CEE625E15A7700288C09 /* Cell */,
+				EFB9928925E6D76C00F8AC3B /* Image */,
+				EF58CE9225E68CA200C094D1 /* Progress View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,8 +130,9 @@
 		EF02CED325E1517000288C09 /* UIHelper */ = {
 			isa = PBXGroup;
 			children = (
-				EF02CED525E1517F00288C09 /* Rest */,
-				EF02CED425E1517400288C09 /* Extension */,
+				EF02CED625E1518700288C09 /* Constants.swift */,
+				EF33437425E5324F00658FD4 /* APErrors.swift */,
+				EF33437F25E53DF700658FD4 /* Alert.swift */,
 			);
 			path = UIHelper;
 			sourceTree = "<group>";
@@ -143,16 +142,6 @@
 			children = (
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		EF02CED525E1517F00288C09 /* Rest */ = {
-			isa = PBXGroup;
-			children = (
-				EF02CED625E1518700288C09 /* Constants.swift */,
-				EF33437425E5324F00658FD4 /* APErrors.swift */,
-				EF33437F25E53DF700658FD4 /* Alert.swift */,
-			);
-			path = Rest;
 			sourceTree = "<group>";
 		};
 		EF02CEDC25E156BB00288C09 /* Model */ = {
@@ -171,12 +160,12 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		EF02CEE625E15A7700288C09 /* List Cells */ = {
+		EF02CEE625E15A7700288C09 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				EF02CEE725E15A8100288C09 /* AppetizerListCell.swift */,
 			);
-			path = "List Cells";
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EF33437825E5386900658FD4 /* View Model */ = {
@@ -187,12 +176,47 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		EF58CE9125E68C9300C094D1 /* Custom Views */ = {
+		EF4D836025E6DC8900B7008B /* Appetizer List View */ = {
 			isa = PBXGroup;
 			children = (
-				EF58CE9225E68CA200C094D1 /* Progress View */,
+				EF02CEC525E1510A00288C09 /* AppetizerListView.swift */,
 			);
-			path = "Custom Views";
+			path = "Appetizer List View";
+			sourceTree = "<group>";
+		};
+		EF4D836125E6DC9800B7008B /* Order View */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CECF25E1511800288C09 /* OrderView.swift */,
+			);
+			path = "Order View";
+			sourceTree = "<group>";
+		};
+		EF4D836225E6DC9F00B7008B /* Account View */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CECB25E1511400288C09 /* AccountView.swift */,
+			);
+			path = "Account View";
+			sourceTree = "<group>";
+		};
+		EF4D836325E6DCC400B7008B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CED425E1517400288C09 /* Extension */,
+				EF02CEDC25E156BB00288C09 /* Model */,
+				EF02CEE325E1575F00288C09 /* Manager */,
+				EF02CED325E1517000288C09 /* UIHelper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EF4D836425E6DD2500B7008B /* Appetizer Tab View */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CEA025E1504200288C09 /* AppetizerTabView.swift */,
+			);
+			path = "Appetizer Tab View";
 			sourceTree = "<group>";
 		};
 		EF58CE9225E68CA200C094D1 /* Progress View */ = {
@@ -201,6 +225,34 @@
 				EF58CE9325E68CAC00C094D1 /* AppetizerProgressView.swift */,
 			);
 			path = "Progress View";
+			sourceTree = "<group>";
+		};
+		EFB9928025E6D6E800F8AC3B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EF02CE9F25E1504200288C09 /* AppetizersApp.swift */,
+				EF02CEA125E1504300288C09 /* Assets.xcassets */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		EFB9928125E6D6EF00F8AC3B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EF4D836225E6DC9F00B7008B /* Account View */,
+				EF4D836425E6DD2500B7008B /* Appetizer Tab View */,
+				EF4D836025E6DC8900B7008B /* Appetizer List View */,
+				EF4D836125E6DC9800B7008B /* Order View */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EFB9928925E6D76C00F8AC3B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EFB9928A25E6D78400F8AC3B /* RemoteImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +355,7 @@
 				EF33437125E531C300658FD4 /* NetworkManager.swift in Sources */,
 				EF33437525E5324F00658FD4 /* APErrors.swift in Sources */,
 				EF02CECC25E1511400288C09 /* AccountView.swift in Sources */,
+				EFB9928B25E6D78400F8AC3B /* RemoteImage.swift in Sources */,
 				EF02CEB425E1504300288C09 /* AppetizerTabView.swift in Sources */,
 				EF02CEE825E15A8100288C09 /* AppetizerListCell.swift in Sources */,
 				EF02CEB225E1504300288C09 /* AppetizersApp.swift in Sources */,
@@ -322,6 +375,7 @@
 			files = (
 				EF02CEB525E1504300288C09 /* AppetizerTabView.swift in Sources */,
 				EF02CEB325E1504300288C09 /* AppetizersApp.swift in Sources */,
+				EFB9928C25E6D78400F8AC3B /* RemoteImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

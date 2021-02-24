@@ -14,15 +14,17 @@ struct AppetizerListView: View {
         NavigationView {
             ZStack {
                 List(viewModel.appetizers) { appetizer in
-                    AppetizerListCell(appetizerName: appetizer.name,
-                                      appetizerPrice: appetizer.price)
+                    AppetizerListCell(appetizer: appetizer)
                 }
                 if viewModel.isLoadingView { AppetizerProgressView() }
             }
             .navigationTitle("Appetizers")
-            .onAppear(perform: {
-                viewModel.getAppetizers()
-            })
+            .onAppear { viewModel.getAppetizers() }
+            .alert(item: $viewModel.alertItem) { alert in
+                Alert(title:            alert.title,
+                      message:          alert.message,
+                      dismissButton:    alert.dismiss)
+            }
         }
     }
 }
