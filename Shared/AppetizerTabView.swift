@@ -12,14 +12,12 @@ struct AppetizerTabView: View {
     
     var body: some View {
         TabView {
-            AppetizerListView(appetizersArray: $viewModel.appetizers)
+            AppetizerListView(viewModel: viewModel)
                 .tabItem {
                     Image(systemName: SFSymbolsAsString.homePage)
                     Text("Home")
                 }
-                .onAppear(perform: {
-                    viewModel.getAppetizers()
-                })
+
             AccountView()
                 .tabItem {
                     Image(systemName: SFSymbolsAsString.account)

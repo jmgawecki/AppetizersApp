@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct AppetizerListView: View {
-    @Binding var appetizersArray: [Appetizer]
+    @ObservedObject var viewModel: AppetizerViewModel
+    
     var body: some View {
         NavigationView {
-            List(appetizersArray) { appetizer in
-                AppetizerListCell(appetizerName: appetizer.name,
-                                  appetizerPrice: appetizer.price)
+            ZStack {
+                List(viewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizerName: appetizer.name,
+                                      appetizerPrice: appetizer.price)
+                }
+                if viewModel.isLoadingView { AppetizerProgressView() }
             }
             .navigationTitle("Appetizers")
+            .onAppear(perform: {
+                viewModel.getAppetizers()
+            })
         }
-        
     }
 }
 
 struct AppetizerListView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerListView(appetizersArray: .constant(MockData.Appetizers))
+        AppetizerListView(viewModel: AppetizerViewModel())
     }
 }

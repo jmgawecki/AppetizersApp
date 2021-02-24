@@ -23,6 +23,7 @@
 		EF33437525E5324F00658FD4 /* APErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437425E5324F00658FD4 /* APErrors.swift */; };
 		EF33437A25E5387900658FD4 /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437925E5387900658FD4 /* AppetizerViewModel.swift */; };
 		EF33438025E53DF700658FD4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33437F25E53DF700658FD4 /* Alert.swift */; };
+		EF58CE9425E68CAC00C094D1 /* AppetizerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58CE9325E68CAC00C094D1 /* AppetizerProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EF33437425E5324F00658FD4 /* APErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APErrors.swift; sourceTree = "<group>"; };
 		EF33437925E5387900658FD4 /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
 		EF33437F25E53DF700658FD4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		EF58CE9325E68CAC00C094D1 /* AppetizerProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				EF02CEE325E1575F00288C09 /* Manager */,
 				EF02CEDC25E156BB00288C09 /* Model */,
 				EF02CED325E1517000288C09 /* UIHelper */,
+				EF58CE9125E68C9300C094D1 /* Custom Views */,
 				EF02CEC425E1510300288C09 /* Views */,
 				EF02CE9F25E1504200288C09 /* AppetizersApp.swift */,
 				EF02CEA025E1504200288C09 /* AppetizerTabView.swift */,
@@ -182,6 +185,22 @@
 				EF33437925E5387900658FD4 /* AppetizerViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		EF58CE9125E68C9300C094D1 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF58CE9225E68CA200C094D1 /* Progress View */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		EF58CE9225E68CA200C094D1 /* Progress View */ = {
+			isa = PBXGroup;
+			children = (
+				EF58CE9325E68CAC00C094D1 /* AppetizerProgressView.swift */,
+			);
+			path = "Progress View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +308,7 @@
 				EF02CEB225E1504300288C09 /* AppetizersApp.swift in Sources */,
 				EF33438025E53DF700658FD4 /* Alert.swift in Sources */,
 				EF02CEC625E1510A00288C09 /* AppetizerListView.swift in Sources */,
+				EF58CE9425E68CAC00C094D1 /* AppetizerProgressView.swift in Sources */,
 				EF02CEDE25E156C000288C09 /* Appetizer.swift in Sources */,
 				EF02CED025E1511800288C09 /* OrderView.swift in Sources */,
 				EF33437A25E5387900658FD4 /* AppetizerViewModel.swift in Sources */,
