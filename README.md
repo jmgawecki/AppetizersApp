@@ -1,5 +1,4 @@
 # AppetizersApp
-
 App using SwiftUI framework. Food take away app.
 
 SwiftUI
